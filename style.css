@@ -1,0 +1,129 @@
+.outer-box{
+    width: 25vw;
+    height: 70vh;
+    border: 2px solid rgb(67, 96, 96);
+    background-image: url("https://i.pinimg.com/564x/e7/1b/44/e71b44bcf4e9e183f01236d27d1f0cc8.jpg");
+
+    background-size: cover;
+    padding: 3rem;
+    /* display: flex;
+    justify-content: center; */
+    
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+[type="text"]{
+    width: 92%;
+    padding: 15px;
+    background: transparent;
+    outline: none;
+    border-style: none;
+    border: 2px solid palevioletred;
+    font-size: larger;
+    color: aliceblue;
+}
+[type="text"]::placeholder{
+    color: aliceblue;
+}
+
+[type="submit"]{
+    width: 100%;
+    margin: 10px;
+    background-color: rgba(98, 98, 194, 0.367);
+    outline: none;
+    border-style: none;
+    border: 2px solid palevioletred;
+    padding: 15px;
+    font-size: x-large;
+    color: rgb(250, 221, 231);
+    font-weight: 900;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(128, 0, 128, 0.289);
+}
+.glass-effect{
+    width: 90%;
+    height: 20vh;
+    margin: 10rem;
+    margin-top: 4rem;
+    padding: 20px;
+    background-color: rgba(33, 32, 33, 0.486);
+    backdrop-filter: blur(2.5px);
+ 
+}
+#para{
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight:700;
+}
+
+/* Default styling for desktop (Laptop view) */
+.outer-box {
+    width: 25vw; /* Keeps size fixed on larger screens */
+    height: 70vh;
+    padding: 3rem;
+}
+
+/* Adjustments for smaller screens (tablet and mobile) */
+@media (max-width: 1024px) {
+    .outer-box {
+        width: 40vw;
+        height: auto;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .outer-box {
+        width: 60vw;
+        height: auto;
+        padding: 1.5rem;
+    }
+
+    /* Font and button size adjustments for smaller screens */
+    [type="text"]
+    {
+        width: 85%; /* Full width */
+        font-size: medium; /* Slightly smaller font */
+        padding: 10px;
+    }
+
+    [type="submit"] {
+        width: 93%; /* Full width */
+        font-size: medium; /* Slightly smaller font */
+        padding: 10px;
+    }
+
+    .glass-effect {
+        width: 93%; /* Full width for small screens */
+        height: 30vh;
+        margin: 1rem 0;
+        padding: 20px;
+        text-align: center;
+        
+    }
+}
+
+@media (max-width: 480px) {
+    .outer-box {
+        width: 90vw; /* Take more width on very small screens */
+        padding: 1rem;
+        height: 60vh;
+    }
+
+    .glass-effect {
+        padding: 5px;
+    }
+}
+
